@@ -9,7 +9,7 @@ export function Header () {
   const { asPath } = useRouter();
 
   return (
-    <header className="fixed w-full h-48 md:h-24 border-b border-light-green-sweetdreams bg-dark-green-sweetdreams py-2 md:py-0 z-10">
+    <header className="md:fixed w-full h-48 md:h-24 border-b border-light-green-sweetdreams bg-dark-green-sweetdreams py-2 md:py-0 z-10">
       <div className="max-w-6xl h-24 mx-auto px-2 flex items-center justify-between flex-col md:flex-row">
         <Link href='/'>
           <Image src={logoTransparent} alt="Site Logo" width={130} className="cursor-pointer" priority/>
