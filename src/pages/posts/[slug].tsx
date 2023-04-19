@@ -22,7 +22,7 @@ export default function Product({ post }: ProductProps) {
       <main className="max-w-6xl mx-auto px-8">
         <div>
           <article className="flex flex-col items-center justify-center">
-            <h1 className="text-dark-green-sweetdreams my-5 text-2xl uppercase">{post.title}</h1>
+            <h1 className="text-dark-green-sweetdreams my-5 mt-52 md:mt-28 text-2xl uppercase">{post.title}</h1>
             <Image
               src={post.cover}
               alt={post.title}
@@ -31,13 +31,9 @@ export default function Product({ post }: ProductProps) {
               placeholder="blur"
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN0vQgAAWEBGHsgcxcAAAAASUVORK5CYII="
               quality={100}
-              className="lg:max-w-md max-h-96 rounded from bg-gradient-to-r from-dark-green-sweetdreams to-pink-sweetdreams p-0.5 mb-5"
+              className="md:max-w-md max-h-96 rounded from bg-gradient-to-r from-dark-green-sweetdreams to-pink-sweetdreams p-0.5 mb-5"
             />
-            {/* <div dangerouslySetInnerHTML={{__html: post.description}}
-            >
-            </div> */}
-
-            <div className="text-dark-pink-sweetdreams">
+            <div className="text-dark-pink-sweetdreams text-base">
               {post.description.map((item, index) => {
                 if (item.type === "list-item") {
                   return (
@@ -50,6 +46,7 @@ export default function Product({ post }: ProductProps) {
                     <div
                       key={index}
                       dangerouslySetInnerHTML={{ __html: RichText.asHtml([item]) }}
+                      className="my-2 uppercase"
                     />
                   );
                 }
@@ -79,13 +76,6 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params }) =>
     }
   }
 
-  // const post = {
-  //   slug: slug,
-  //   title: RichText.asText(response.data.title),
-  //   cover: response.data.cover.url,
-  //   description: RichText.asText(response.data.description)
-  // }
-
   const post = {
     slug: slug,
     title: RichText.asText(response.data.title),
@@ -95,8 +85,6 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params }) =>
       text: item.text,
     })),
   };
-
-  console.log("POST ==> ", post)
 
   return {
     props: {
