@@ -143,6 +143,6 @@ export const getStaticProps: GetStaticProps = async () => {
       page: response.page,
       totalPage: response.total_pages
     },
-    revalidate: 60 * 30 // update every 30 minutes
+    revalidate: 60 * 1 // update every 30 minutes
   }
 }
