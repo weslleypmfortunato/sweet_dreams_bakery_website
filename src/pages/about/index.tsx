@@ -37,7 +37,7 @@ export default function About({content}: ContentProps) {
           <img src={content.sweetdreamsBanner} alt="Sweet Dreams Banner" className="max-w-xs lg:max-w-md my-5 lg:my-0"/>
           <div className="flex items-center lg:hidden">
             <a href={content.instagram} target="_blank" className="my-4 ml-4 text-dark-pink-sweetdreams hover:text-project-cta text-3xl transition duration-500 transform hover:scale-105">
-              <FaInstagram/>
+              <FaInstagram target="_blank"/>
             </a>
           </div>
         </div>
