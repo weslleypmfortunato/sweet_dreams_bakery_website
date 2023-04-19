@@ -22,7 +22,7 @@ export default function Product({ post }: ProductProps) {
       <main className="max-w-6xl mx-auto px-8">
         <div>
           <article className="flex flex-col items-center justify-center">
-            <h1 className="text-dark-green-sweetdreams my-5 mt-52 md:mt-28 text-2xl uppercase">{post.title}</h1>
+            <h1 className="text-dark-green-sweetdreams my-5 md:mt-28 text-2xl uppercase">{post.title}</h1>
             <Image
               src={post.cover}
               alt={post.title}

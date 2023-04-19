@@ -63,7 +63,7 @@ export default function Products({ posts: postsBlog, page, totalPage }: PostsPro
       </Head>
       <main>
         <div>
-          <h1 className="text-center text-dark-pink-sweetdreams pt-52 md:pt-32 lg:pt-28 pb-2 text-3xl">Confira nossas delícias</h1>
+          <h1 className="text-center text-dark-pink-sweetdreams pt-5 md:pt-32 lg:pt-28 pb-2 text-3xl">Confira nossas delícias</h1>
           <div className="flex flex-row flex-wrap items-center justify-center max-w-6xl mx-auto">
             {posts.map(post => (
                 <div key={post.slug} className="px-2 pb-2" >

@@ -44,7 +44,7 @@ export default function Home({ content }: ContentProps) {
           <div className="flex items-center flex-col lg:flex-row">
             <div className="flex flex-col items-center justify-center">
               <section className="max-w-sm lg:max-w-xl block">
-                <h1 className="text-4xl lg:text-5xl leading-snug mt-52 md:mt-36 lg:mt-20 mb-2 lg:mb-5 text-black"><span className="text-dark-green-sweetdreams">Sweet</span> <span className="text-pink-sweetdreams">Dreams</span> Confeitaria</h1>
+                <h1 className="text-4xl lg:text-5xl leading-snug md:mt-36 lg:mt-20 mb-2 lg:mb-5 text-black"><span className="text-dark-green-sweetdreams">Sweet</span> <span className="text-pink-sweetdreams">Dreams</span> Confeitaria</h1>
                 <span className="text-base lg:text-lg leading-8 text-dark-pink-sweetdreams">{content.titleContent}</span>
               </section>
               <a>

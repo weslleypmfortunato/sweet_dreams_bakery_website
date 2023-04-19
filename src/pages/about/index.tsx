@@ -24,7 +24,7 @@ export default function About({content}: ContentProps) {
       <main className="block">
         <div className="mx-auto max-w-6xl flex flex-col lg:flex-row justify-between items-center px-2 lg:px-0">
           <section className="max-w-2xl">
-            <h1 className="text-3xl lg:text-5xl mt-52 md:mt-28 mb-5 text-center md:text-left"><span className="text-dark-green-sweetdreams">Sweet</span> <span className="text-dark-pink-sweetdreams">Dreams</span> Confeitaria</h1>
+            <h1 className="text-3xl lg:text-5xl mt-5 md:mt-28 mb-5 text-center md:text-left"><span className="text-dark-green-sweetdreams">Sweet</span> <span className="text-dark-pink-sweetdreams">Dreams</span> Confeitaria</h1>
             <p className="text-base leading-8 text-dark-green-sweetdreams whitespace-pre-wrap">{content.titleContent}</p>
             <div className="hidden lg:block">
               <div className="flex items-center pt-5">
