@@ -20,10 +20,10 @@ export function Header () {
               Home
             </Link>
             <Link href='/posts' className={`inline-block relative md:px-2 h-24 leading-24 ml-6 transition duration-400 hover:text-project-text transform hover:scale-105 ${asPath === "/posts" ? "text-light-green-sweetdreams underline" : "text-white"}`}>
-              Produtos
+              Products
             </Link>
             <Link href='/about' className={`inline-block relative md:px-2 h-24 leading-24 ml-6 transition duration-400 hover:text-project-text transform hover:scale-105 ${asPath === "/about" ? "text-light-green-sweetdreams underline" : "text-white"}`}>
-              Sobre
+              About Us
             </Link>
           </nav>
         </div>

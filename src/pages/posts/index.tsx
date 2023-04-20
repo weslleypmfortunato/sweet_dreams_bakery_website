@@ -63,11 +63,11 @@ export default function Products({ posts: postsBlog, page, totalPage }: PostsPro
       </Head>
       <main>
         <div>
-          <h1 className="text-center text-dark-pink-sweetdreams pt-5 md:pt-32 lg:pt-28 pb-2 text-3xl">Confira nossas delícias</h1>
+          <h1 className="text-center text-dark-pink-sweetdreams pt-5 md:pt-32 lg:pt-28 pb-2 text-3xl mb-2">Check out our delights</h1>
           <div className="flex flex-row flex-wrap items-center justify-center max-w-6xl mx-auto">
             {posts.map(post => (
                 <div key={post.slug} className="px-2 pb-2" >
-                  <div className="p-2 flex flex-col items-center justify-center w-56 h-80 border border-light-green-sweetdreams rounded">
+                  <div className="p-2 flex flex-col items-center justify-center w-72 h-78 border border-light-green-sweetdreams rounded">
                     <Image
                       src={post.cover}
                       alt={post.title}
@@ -77,11 +77,11 @@ export default function Products({ posts: postsBlog, page, totalPage }: PostsPro
                       quality={100}
                       placeholder="blur"
                       blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN0vQgAAWEBGHsgcxcAAAAASUVORK5CYII="
-                      className="w-48 h-48 rounded from bg-gradient-to-r from-dark-green-sweetdreams to-pink-sweetdreams p-0.5"
+                      className="w-60 h-60 rounded from bg-gradient-to-r from-dark-green-sweetdreams to-pink-sweetdreams pt-0.5 mt-4"
                     />
                   <strong className="text-center text-dark-pink-sweetdreams text-base py-2">{post.title}</strong>
                   <Link href={`/posts/${post.slug}`} target="_blank" key={post.slug}>
-                    <button className="bg-dark-green-sweetdreams border border-transparent text-base text-white px-2 py-1 rounded transition duration-500 transform hover:scale-105 hover:border hover:border-dark-pink-sweetdreams">Clique e Confira</button>
+                    <button className="bg-dark-green-sweetdreams border border-transparent text-base text-white px-2 py-1 rounded transition duration-500 transform hover:scale-105 hover:border hover:border-dark-pink-sweetdreams mb-4">DISCOVER MORE</button>
                   </Link>
                   </div>
                 </div>

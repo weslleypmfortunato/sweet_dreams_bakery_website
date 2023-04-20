@@ -44,21 +44,21 @@ export default function Home({ content }: ContentProps) {
           <div className="flex items-center flex-col lg:flex-row">
             <div className="flex flex-col items-center justify-center">
               <section className="max-w-sm lg:max-w-xl block">
-                <h1 className="text-4xl lg:text-5xl leading-snug md:mt-36 lg:mt-20 mb-2 lg:mb-5 text-black"><span className="text-dark-green-sweetdreams">Sweet</span> <span className="text-pink-sweetdreams">Dreams</span> Confeitaria</h1>
-                <span className="text-base lg:text-lg leading-8 text-dark-pink-sweetdreams">{content.titleContent}</span>
+                <h1 className="text-4xl lg:text-5xl leading-snug md:mt-36 lg:mt-28 mb-2 lg:mb-20 text-black"><span className="text-dark-green-sweetdreams">Sweet</span> <span className="text-pink-sweetdreams">Dreams</span> <br /> <span className="text-3xl">Candy Store</span></h1>
+                <span className="text-base lg:text-lg leading-8 text-dark-pink-sweetdreams mt-10">{content.titleContent}</span>
               </section>
               <a>
-                <button onClick={handleEmailClick} className="hidden lg:block w-full scale-90 lg:scale-100 lg:w-56 lg:mr-0 bg-dark-green-sweetdreams border-0 py-3 px-5 mt-10 rounded-lg text-project-text focus:animate-pulse duration-500 ease-in-out transform hover:scale-105 hover:font-bold">
-                FAÇA SEU PEDIDO!
+                <button onClick={handleEmailClick} className="hidden lg:block w-full scale-90 lg:scale-100 lg:w-56 lg:mr-0 bg-dark-green-sweetdreams border-0 py-3 px-5 mt-32 rounded-lg text-project-text focus:animate-pulse duration-500 ease-in-out transform hover:scale-105 hover:font-bold">
+                BUY NOW
                 </button>
               </a>
-              <p className="text-project-cta mt-3">Atendemos toda a região de Victoria e Langford</p>
+              <p className="text-project-cta lg:mt-20">We serve the entire Victoria and Langford region</p>
             </div>
             <img src={content.sweetdreamBanner} alt="Sweet Dream Banner" className="max-w-xs lg:max-w-lg mt-3 lg:mt-0 rounded ml-0 lg:ml-5"/>
           </div>
           <a>
             <button onClick={handleEmailClick} className="lg:hidden w-screen scale-90 lg:scale-100 lg:w-56 lg:mr-0 bg-dark-green-sweetdreams border-0 py-3 px-5 mt-10 rounded-lg text-project-text focus:animate-pulse duration-500 ease-in-out transform hover:scale-95 lg:hover:scale-105 hover:font-bold">
-              FAÇA SEU PEDIDO!
+            BUY NOW
             </button>
           </a>
         </div>
@@ -73,14 +73,14 @@ export default function Home({ content }: ContentProps) {
             </section>
             <a onClick={handleEmailClick}>
               <button className="hidden lg:block w-full scale-90 lg:scale-100 lg:w-80 lg:mr-0 bg-dark-green-sweetdreams border-0 py-3 px-5 mt-10 rounded-lg text-project-text focus:animate-pulse duration-500 ease-in-out transform hover:scale-105 hover:font-bold">
-              EXPERIMENTE AGORA MESMO
+              TRY IT NOW
               </button>
             </a>
           </div>
           <img src={content.cakeBanner} alt="Cake Banner" className="max-w-xs lg:max-w-lg mt-3 lg:mt-0 rounded mr-0 lg:mr-5"/>
           <a>
             <button onClick={handleEmailClick} className="lg:hidden w-screen scale-90 lg:scale-100 lg:w-56 lg:mr-0 bg-dark-green-sweetdreams border-0 py-3 px-5 mt-10 rounded-lg text-project-text focus:animate-pulse duration-500 ease-in-out transform hover:scale-95 lg:hover:scale-105 hover:font-bold">
-            EXPERIMENTE AGORA MESMO
+            TRY IT NOW
             </button>
           </a>
         </div>
@@ -97,10 +97,10 @@ export default function Home({ content }: ContentProps) {
             <div className="flex flex-col justify-center items-center">
               <a>
                 <button onClick={handleEmailClick} className="w-screen scale-90 lg:scale-100 lg:w-80 lg:mr-0 bg-dark-green-sweetdreams border-0 py-3 px-5 mt-10 rounded-lg text-project-text focus:animate-pulse duration-500 ease-in-out transform hover:scale-105 hover:font-bold mb-2">
-                VENHA EXPERIMENTAR
+                WHY WAIT? PLACE YOUR ORDER!
                 </button>
               </a>
-              <p className="text-project-cta">Não deixe para a última hora!</p>
+              <p className="text-project-cta">DO NOT LEAVE UNTIL THE LAST MINUTE!</p>
             </div>
           </div>
         </div>
@@ -115,14 +115,14 @@ export default function Home({ content }: ContentProps) {
             </section>
             <a>
               <button onClick={handleEmailClick} className="hidden lg:block w-full scale-90 lg:scale-100 lg:w-80 lg:mr-0 bg-dark-green-sweetdreams border-0 py-3 px-5 mt-10 rounded-lg text-project-text focus:animate-pulse duration-500 ease-in-out transform hover:scale-105 hover:font-bold">
-              PEÇA JÁ O SEU
+              ORDER NOW
               </button>
             </a>
           </div>
           <img src={content.brownie_banner} alt="Brownie Banner" className="max-w-xs lg:max-w-lg mt-3 lg:mt-0 rounded mr-0 lg:mr-5 pl-0 lg:pl-2"/>
           <a>
             <button onClick={handleEmailClick} className="lg:hidden w-screen scale-90 lg:scale-100 lg:w-56 lg:mr-0 bg-dark-green-sweetdreams border-0 py-3 px-5 mt-10 rounded-lg text-project-text focus:animate-pulse duration-500 ease-in-out transform hover:scale-95 lg:hover:scale-105 hover:font-bold">
-            PEÇA JÁ O SEU
+            ORDER NOW
             </button>
           </a>
         </div>
@@ -139,10 +139,10 @@ export default function Home({ content }: ContentProps) {
             <div className="flex flex-col justify-center items-center">
               <a>
                 <button onClick={handleEmailClick} className="w-screen scale-90 lg:scale-100 lg:w-80 lg:mr-0 bg-dark-green-sweetdreams border-0 py-3 px-5 mt-10 rounded-lg text-project-text focus:animate-pulse duration-500 ease-in-out transform hover:scale-105 hover:font-bold mb-2">
-                VENHA EXPERIMENTAR
+                TREAT YOURSELF
                 </button>
               </a>
-              <p className="text-project-cta">Pedidos sob demanda</p>
+              <p className="text-project-cta">On-demand orders</p>
             </div>
           </div>
         </div>
